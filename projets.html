@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - NDJOYE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="projets.html" class="active">PROJETS</a></li>
+            <li><a href="aboutme.html">À PROPOS DE MOI</a></li>
+            <li><a href="bilan.html">BILAN PERSONNEL</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="carouselcontainer">
+        <div class="carousel-container">
+            <div class="nav-button nav-prev" id="prev-btn">&#10094;</div>
+            <div class="nav-button nav-next" id="next-btn">&#10095;</div>
+            <div class="carousel-track" id="carousel-track"></div>
+        </div>
+        <div class="carousel-indicators" id="carousel-indicators"></div>
+    </div>
+
+    <div id="project-modal" class="hidden">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            <h2 id="modal-title">Titre du projet</h2>
+            <p id="modal-description">Description détaillée par défaut</p>
+            <a id="modal-download" href="#" download>Télécharger le projet</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

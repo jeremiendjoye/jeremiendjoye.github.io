@@ -1,0 +1,644 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nicolas Cochin', serif; /* Utilisation de la police Nicolas Cochin */
+}
+
+body {
+    background-color: #0b162c;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0b162c;
+    color: white;
+}
+
+nav ul li a.active {
+    background-color: #0b162c;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Header */
+header .container {
+    color: #0b162c ;
+    background-color: #cacaca;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .content {
+    text-align: left;
+    flex: 2;
+}
+
+header h1 {
+    font-size: 64px;
+    margin-left: 280px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 24px;
+    margin-left: 283px;
+    margin-bottom: 20px;
+}
+
+/* Positionnement de la photo légèrement plus bas */
+header .profile-picture img {
+    width: 250px; /* Taille légèrement agrandie */
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-top: 20px; /* Décale la photo vers le bas */
+}
+
+.styled-hr {
+    border: none;
+    height: 2px; /* Hauteur du trait */
+    background-color: #0b162c; /* Couleur du trait */
+    width: 50%; /* Ajustez la largeur ici (par exemple, 50%) */
+    margin: 10px auto; /* Centre le trait horizontalement */
+}
+
+/* Main dynamic text */
+main {
+    position: relative;
+    min-height: 300px;
+}
+
+/* Style pour les phrases dynamiques */
+main .dynamic-text {
+    position: absolute;
+    top: 120px; /* Ajustez cette valeur pour positionner le texte */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    color: white;
+
+}
+
+/* Taille réduite des titres dynamiques */
+.dynamic-text h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.dynamic-text h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #0b162c;
+}
+
+footer .download-cv {
+    text-decoration: none;
+    color: rgb(16, 15, 15);
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 0; /* Réduit la marge supérieure */
+    position: relative;
+    top: -100px; 
+}
+/* A propos */
+
+.bloc {
+    margin-top: 40px;
+    top : 40px ;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bloc-contenu {
+    gap: 0; /* Supprime l'espacement entre les éléments internes */
+}
+
+.bloc-gris {
+    background-color: #e9e7e7;
+}
+
+.bloc-gris p {
+    color: #0b162c;
+}
+
+.bloc-bleu {
+    background-color: #806030;
+    color: white;
+}
+
+.bloc-titre {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bloc-contenu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.bloc-contenu.inverse {
+    flex-direction: row-reverse;
+}
+
+.bloc-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.bloc-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bloc-texte {
+    flex: 2;
+}
+
+.bloc-texte p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* CODE POUR LE TRUC CONTACT*/
+.footer {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #cacaca;
+}
+
+.footer-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #0b162c;
+    letter-spacing: 2px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    color: #0b162c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #996c0b;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* projets */
+
+.carouselcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 50px; /* Ajoute un espace de 50px au-dessus du carousel */
+}
+
+  .carousel-track {
+    position: relative;
+    height: 100%;
+    margin-bottom : 400px ;
+  }
+
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    width: 60%;
+    left: 20%;
+    opacity: 0;
+    transform: scale(0.9);
+    z-index: 0;
+  }
+
+  .carousel-slide.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+  }
+
+  .carousel-slide.prev,
+  .carousel-slide.next {
+    width: 40%;
+    top: 20px;
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  .carousel-slide.prev {
+    left: 0;
+  }
+
+  .carousel-slide.next {
+    right: 0;
+    left: auto;
+  }
+
+  .project-card {
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 75%;
+    position: relative;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-counter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 16px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .project-content {
+    padding: 16px;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .project-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .project-description {
+    color: #666;
+  }
+
+  .btn-more {
+    align-self: flex-end;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn-more:hover {
+    background-color: #1d4ed8;
+  }
+
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .nav-prev {
+    left: 20px;
+  }
+
+  .nav-next {
+    right: 20px;
+  }
+
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+  }
+
+  .indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .indicator.active {
+    width: 24px;
+    background-color: #2563eb;
+    border-radius: 6px;
+  }
+
+/* MODALE */
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fond légèrement plus foncé pour un meilleur contraste */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  color: black;
+  padding: 40px; /* Padding augmenté */
+  border-radius: 12px;
+  width: 80%; /* Largeur augmentée de 70% à 80% */
+  max-width: 1000px; /* Largeur maximale augmentée */
+  max-height: 80vh; /* Hauteur maximale de 80% de la hauteur de la fenêtre */
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Ombre plus prononcée */
+  overflow: auto; /* Ajout d'un défilement si nécessaire */
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #00274d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px; /* Taille augmentée */
+  height: 36px; /* Taille augmentée */
+  font-size: 22px; /* Taille de police augmentée */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.close-button:hover {
+  background-color: #003d73; /* Effet hover */
+}
+
+#modal-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #00274d;
+}
+
+#modal-description {
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.modal-download {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px; /* Taille augmentée */
+  background-color: #00274d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.modal-download:hover {
+  background-color: #003d73; /* Effet hover */
+}
+
+
+/* BILAN */
+
+.bilan-content {
+    max-width: 950px;
+    width: 90%;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    line-height: 1.6;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.bilan-content h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bilan-content p {
+    margin-bottom: 20px;
+}
+
+
+/* TEST CSS */
+
+.aboutme-content h1, h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+.aboutme-content h1 {
+            color: #ffffff;
+        }
+
+        /* Paragraph styles */
+.aboutme-content p {
+            line-height: 1.6;
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+.aboutme-content a {
+            color: #f5e8d4;
+            text-decoration: underline;
+        }
+
+
+
+.headerbilan {
+    background-color:  #0b162c;
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerbilan-content {
+    max-width: 60%;
+}
+
+.headerbilan-image {
+    width: 35%;
+    max-width: 500px;
+}
+
+.headerbilan-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.section {
+    background-color: #ffffff ;
+    color: #0b162c;
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section-dark {
+    background-color: #0b162c;
+    color: #ffffff;
+}
+
+.section-content {
+    width: 55%;
+}
+
+.section-image {
+    width: 40%;
+}
+
+.section-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.lecture-section {
+  background-color: #ffffff;
+  color: #0b162c;
+  padding: 50px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centre verticalement le contenu */
+  gap: 40px; /* Espace entre l'image et le texte */
+}
+
+.lecture-image {
+  width: 25%; /* Image réduite */
+  flex-shrink: 0; /* Empêche l'image de rétrécir davantage */
+}
+
+.lecture-image img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+  display: block;
+}
+
+.lecture-content {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lecture-content h2 {
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  align-self: flex-start; /* S'aligne à gauche du texte, mais centré verticalement */
+}
+
+.lecture-content p {
+  line-height: 1.6;
+}
