@@ -433,7 +433,7 @@ footer .download-cv {
 }
 
 .hidden {
-  display: none;
+  display: none !important; /* Assure que l'élément est vraiment caché */
 }
 
 .modal-content {
@@ -483,7 +483,7 @@ footer .download-cv {
   font-size: 16px;
 }
 
-.modal-download {
+#modal-download {
   display: inline-block;
   margin-top: 25px;
   padding: 12px 25px; /* Taille augmentée */
@@ -495,21 +495,24 @@ footer .download-cv {
   transition: background-color 0.3s;
 }
 
-.modal-download:hover {
+#modal-download:hover {
   background-color: #003d73; /* Effet hover */
 }
-
 
 /* BILAN */
 
 .bilan-content {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    background-color: #cacaca;
+    color: #0b162c;
     max-width: 950px;
     width: 90%;
     padding: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: justify;
     line-height: 1.6;
-    border-radius: 12px;
+    border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -576,7 +579,7 @@ footer .download-cv {
 
 
 .section {
-    background-color: #ffffff ;
+    background-color: #cacaca ;
     color: #0b162c;
     padding: 50px 10%;
     display: flex;
@@ -604,7 +607,7 @@ footer .download-cv {
 
 
 .lecture-section {
-  background-color: #ffffff;
+  background-color: #cacaca;
   color: #0b162c;
   padding: 50px 10%;
   display: flex;

@@ -53,7 +53,7 @@ const projects = [
     id: 2,
     title: "Gestion de fichiers",
     image: "/fichiers/imagesProjets/gestionFichiers.png",
-    description: "Gestion de fichiers",
+    description: "À l'origine, nous disposions d'un fichier au format JSON regroupant l'ensemble des événements ayant eu lieu pendant les Jeux Olympiques de Paris 2024.\n\nCependant, ce fichier était difficilement exploitable en raison de sa mauvaise structuration et de son illisibilité.\n\nPour le rendre utilisable, nous avons développé un script en Python permettant de :\n• sélectionner uniquement les colonnes pertinentes,\n• modifier le type de certaines variables,\n• supprimer les doublons ainsi que les lignes vides ou incohérentes.\n\nUne fois le traitement terminé, le script génère automatiquement un fichier CSV, prêt à être exploité pour l'analyse.\n\nCe projet a été réalisé en binôme avec Antonin Vion, avec qui j'ai eu grand plaisir à travailler.",
     file: "/fichiers/dossier zip/gestionfichier.zip" 
   },
   {
@@ -67,14 +67,17 @@ const projects = [
     id: 4,
     title: "Présentation d'un territoire économique",
     image: "/fichiers/imagesProjets/PresentationBeijing.png",
-    description:"Présentation d'un territoire économique",
+    description: `Dans le cadre de ce projet, nous avons présenté les Jeux Olympiques de Pékin 2008, en mettant en lumière l’impact économique et symbolique qu’ils ont eu sur la Chine.
+Au-delà de l’aspect sportif, nous avons également abordé la richesse de l’histoire chinoise, son patrimoine architectural, ainsi que d’autres dimensions culturelles majeures.
+La présentation a été réalisée en français et en anglais, appuyée par un diaporama PowerPoint.
+Ce travail a été mené en binôme, avec Noé TOQUOY, avec qui j’ai eu le plaisir de collaborer.`,
     file: "/fichiers/dossier zip/Beijing2008.pptx" 
   },
   {
     id: 5,
     title: "Création d'un reporting",
     image: "/fichiers/imagesProjets/reporting.png",
-    description: "Création d'un reporting",
+    description: 'L’objectif de ce projet était de concevoir une application sous Excel à destination des étudiants de première année du BUT Science des Données.Cette application leur permet de suivre l’évolution de leurs notes, d’identifier les blocs validés, et de savoir s’ils remplissent les conditions pour passer en deuxième année.Pour ce faire, nous avons utilisé Excel et le langage VBA.Nous avons notamment automatisé l’insertion et la suppression de notes ainsi que d’autres fonctionnalités à l’aide de UserForms que nous avons programmés en VBA.Excel nous a également permis de créer un tableau de bord dynamique, mis à jour automatiquement en fonction des modifications.Ce projet a représenté une réelle montée en compétences, tant sur le plan technique (VBA) que sur le plan méthodologique (conception de tableaux de bord interactifs).Ce travail a été réalisé en binôme avec Antonin Vion, avec qui la collaboration a été enrichissante.',
     file: "/fichiers/dossier zip/reporting.zip" 
   },
   {
@@ -162,7 +165,7 @@ function renderSlides() {
         <div class="project-content">
           <div>
             <h3 class="project-title">${project.title}</h3>
-            <p class="project-description">${project.description}</p>
+            <p class="project-description">${project.title}</p>
           </div>
           <button class="btn-more">En savoir plus</button>
         </div>
@@ -228,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCarousel();
 });
 
-// Code de la fenêtre modale
+// Code de la fenêtre modale corrigé
 const projectModal = document.getElementById("project-modal");
 const closeButton = document.querySelector(".close-button");
 const modalTitle = document.getElementById("modal-title");
@@ -238,66 +241,71 @@ const modalContent = document.querySelector(".modal-content");
 
 // Fonction pour afficher la modale avec les informations du projet
 function openModal(project) {
-modalTitle.textContent = project.title;
-modalDescription.textContent = project.description;
-modalDownload.href = project.file;
+  modalTitle.textContent = project.title;
+  modalDescription.innerHTML = project.description.replace(/\n/g, '<br>');
+  modalDownload.href = project.file;
 
-// Ajuster la taille de la modale
-modalContent.style.width = "80%";  // Augmentation de la largeur
-modalContent.style.maxWidth = "1000px";  // Augmentation de la largeur maximale
-modalContent.style.maxHeight = "80vh";  // Limiter la hauteur à 80% de la hauteur de la fenêtre
-modalContent.style.overflow = "auto";  // Ajouter un défilement si le contenu est trop grand
+  // Ajuster la taille de la modale
+  modalContent.style.width = "80%";  // Augmentation de la largeur
+  modalContent.style.maxWidth = "1000px";  // Augmentation de la largeur maximale
+  modalContent.style.maxHeight = "80vh";  // Limiter la hauteur à 80% de la hauteur de la fenêtre
+  modalContent.style.overflow = "auto";  // Ajouter un défilement si le contenu est trop grand
 
-// Centrer la modale
-projectModal.style.display = "flex";
-projectModal.style.justifyContent = "center";
-projectModal.style.alignItems = "center";
+  // Afficher la modale
+  projectModal.classList.remove("hidden");
+  
+  // Désactiver le scroll de la page principale
+  document.body.style.overflow = "hidden";
 
-// Afficher la modale
-projectModal.classList.remove("hidden");
+  // Animation d'ouverture
+  modalContent.style.opacity = "0";
+  modalContent.style.transform = "scale(0.9)";
+  setTimeout(() => {
+    modalContent.style.transition = "all 0.3s ease-in-out";
+    modalContent.style.opacity = "1";
+    modalContent.style.transform = "scale(1)";
+  }, 10);
+}
 
-// Animation d'ouverture
-modalContent.style.opacity = "0";
-modalContent.style.transform = "scale(0.9)";
-setTimeout(() => {
-  modalContent.style.transition = "all 0.3s ease-in-out";
-  modalContent.style.opacity = "1";
-  modalContent.style.transform = "scale(1)";
-}, 10);
+// Fonction pour fermer la modale
+function closeModal() {
+  // Animation de fermeture
+  modalContent.style.opacity = "0";
+  modalContent.style.transform = "scale(0.9)";
+  
+  setTimeout(() => {
+    projectModal.classList.add("hidden");
+    modalContent.style.transition = "";
+    
+    // Réactiver le scroll de la page principale
+    document.body.style.overflow = "";
+  }, 300);
 }
 
 // Ajouter un écouteur d'événement pour fermer la modale
-closeButton.addEventListener("click", () => {
-// Animation de fermeture
-modalContent.style.opacity = "0";
-modalContent.style.transform = "scale(0.9)";
-setTimeout(() => {
-  projectModal.classList.add("hidden");
-  modalContent.style.transition = "";
-}, 300);
-});
+closeButton.addEventListener("click", closeModal);
 
 // Fermer la modale si on clique en dehors du contenu
 projectModal.addEventListener("click", (event) => {
-if (event.target === projectModal) {
-  closeButton.click();
-}
+  if (event.target === projectModal) {
+    closeModal();
+  }
 });
 
 // Ajouter la possibilité de fermer avec la touche Echap
 document.addEventListener("keydown", (event) => {
-if (event.key === "Escape" && !projectModal.classList.contains("hidden")) {
-  closeButton.click();
-}
+  if (event.key === "Escape" && !projectModal.classList.contains("hidden")) {
+    closeModal();
+  }
 });
 
 // Ajouter des écouteurs d'événements pour les boutons "En savoir plus"
 document.addEventListener("DOMContentLoaded", () => {
-// Utiliser une délégation d'événements pour gérer les boutons dynamiquement créés
-document.addEventListener("click", (event) => {
-  if (event.target.classList.contains("btn-more")) {
-    const slideIndex = event.target.closest(".carousel-slide").dataset.index;
-    openModal(projects[slideIndex]);
-  }
-});
+  // Utiliser une délégation d'événements pour gérer les boutons dynamiquement créés
+  document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("btn-more")) {
+      const slideIndex = event.target.closest(".carousel-slide").dataset.index;
+      openModal(projects[slideIndex]);
+    }
+  });
 });
