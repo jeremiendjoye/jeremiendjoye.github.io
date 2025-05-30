@@ -46,30 +46,40 @@ const projects = [
     id: 1,
     title: "Conception et implémentation d'une base de données",
     image: "/fichiers/imagesProjets/conceptionBD.png",
-    description: "",
+    description: ``,
     file: "fichiers/dossier zip/BD.zip" 
   },
   {
     id: 2,
     title: "Gestion de fichiers",
     image: "/fichiers/imagesProjets/gestionFichiers.png",
-    description: "À l'origine, nous disposions d'un fichier au format JSON regroupant l'ensemble des événements ayant eu lieu pendant les Jeux Olympiques de Paris 2024.\n\nCependant, ce fichier était difficilement exploitable en raison de sa mauvaise structuration et de son illisibilité.\n\nPour le rendre utilisable, nous avons développé un script en Python permettant de :\n• sélectionner uniquement les colonnes pertinentes,\n• modifier le type de certaines variables,\n• supprimer les doublons ainsi que les lignes vides ou incohérentes.\n\nUne fois le traitement terminé, le script génère automatiquement un fichier CSV, prêt à être exploité pour l'analyse.\n\nCe projet a été réalisé en binôme avec Antonin Vion, avec qui j'ai eu grand plaisir à travailler.",
+    description: `À l'origine, nous disposions d'un fichier au format JSON regroupant l'ensemble des événements ayant eu lieu pendant les Jeux Olympiques de Paris 2024.
+    Cependant, ce fichier était difficilement exploitable en raison de sa mauvaise structuration et de son illisibilité.
+    Pour le rendre utilisable, nous avons développé un script en Python permettant de :
+              - sélectionner uniquement les colonnes pertinentes
+              - modifier le type de certaines variables,
+              - supprimer les doublons ainsi que les lignes vides ou incohérentes.
+    Une fois le traitement terminé, le script génère automatiquement un fichier CSV, prêt à être exploité pour l'analyse.
+    Ce projet a été réalisé en binôme avec Antonin Vion, avec qui j'ai eu grand plaisir à travailler.`,
     file: "/fichiers/dossier zip/gestionfichier.zip" 
   },
   {
     id: 3,
     title: "Régréssion linéaire sur des données réelles",
     image: "/fichiers/imagesProjets/regression.png",
-    description: "Régréssion linéaire sur des données réelles",
+    description: `L'objectif de ce projet a été de prédire le prix des biens immobiliers dans le département des Deux-Sèvres en utilisant un modèle mathématique.
+                  Pour le réaliser nous disposions d'un fichier "train" regroupant plusieurs variable telles que le nombre de pièces, la surface du bien etc.
+                  A partir de ce fichier nous avons entrainé notre modèle en essayant d'établier une relation entre les différentes variables afin de prédire au mieux le prix des biens immobilers.
+                  Une fois que notre modèle a été défini nous sommes passés à la prédiction de ces biens sur le fichier "test" comportant les meme variables que "train" fichier à partir duquel notre modèle a été entrainé.
+                  Ce projet m'a permis de mettre en pratique les différentes notions vu en mathématiques à travers le choix du modèle etc et d'avoir..`,
     file: "/fichiers/dossier zip/regression.zip"
   },
   {
     id: 4,
     title: "Présentation d'un territoire économique",
     image: "/fichiers/imagesProjets/PresentationBeijing.png",
-    description: `Dans le cadre de ce projet, nous avons présenté les Jeux Olympiques de Pékin 2008, en mettant en lumière l’impact économique et symbolique qu’ils ont eu sur la Chine.
-Au-delà de l’aspect sportif, nous avons également abordé la richesse de l’histoire chinoise, son patrimoine architectural, ainsi que d’autres dimensions culturelles majeures.
-La présentation a été réalisée en français et en anglais, appuyée par un diaporama PowerPoint.
+    description: `Dans le cadre de ce projet, nous avons présenté les Jeux Olympiques de Pékin 2008, en mettant en lumière l’impact économique et symbolique qu’ils ont eu sur la Chine. Au-delà de l’aspect sportif, nous avons également abordé la richesse de l’histoire chinoise, son patrimoine architectural, ainsi que d’autres dimensions culturelles majeures.
+La présentation a été réalisée en français et en anglais, appuyée par un diaporama PowerPoint. Cette présentation m’a permis d’en apprendre davantage sur l’histoire de la Chine, tout en renforçant mes compétences en communication orale et en anglais.
 Ce travail a été mené en binôme, avec Noé TOQUOY, avec qui j’ai eu le plaisir de collaborer.`,
     file: "/fichiers/dossier zip/Beijing2008.pptx" 
   },
@@ -77,14 +87,18 @@ Ce travail a été mené en binôme, avec Noé TOQUOY, avec qui j’ai eu le pla
     id: 5,
     title: "Création d'un reporting",
     image: "/fichiers/imagesProjets/reporting.png",
-    description: 'L’objectif de ce projet était de concevoir une application sous Excel à destination des étudiants de première année du BUT Science des Données.Cette application leur permet de suivre l’évolution de leurs notes, d’identifier les blocs validés, et de savoir s’ils remplissent les conditions pour passer en deuxième année.Pour ce faire, nous avons utilisé Excel et le langage VBA.Nous avons notamment automatisé l’insertion et la suppression de notes ainsi que d’autres fonctionnalités à l’aide de UserForms que nous avons programmés en VBA.Excel nous a également permis de créer un tableau de bord dynamique, mis à jour automatiquement en fonction des modifications.Ce projet a représenté une réelle montée en compétences, tant sur le plan technique (VBA) que sur le plan méthodologique (conception de tableaux de bord interactifs).Ce travail a été réalisé en binôme avec Antonin Vion, avec qui la collaboration a été enrichissante.',
+    description: ` L’objectif de ce projet était de concevoir une application sous Excel à destination des étudiants de première année du BUT Science des Données. 
+      Cette application leur permet de suivre l’évolution de leurs notes, d’identifier les blocs validés, et de savoir s’ils remplissent les conditions pour passer en deuxième année.
+      Pour ce faire, nous avons utilisé Excel et le langage VBA. Nous avons notamment automatisé l’insertion et la suppression de notes ainsi que d’autres fonctionnalités à l’aide de UserForms que nous avons programmés en VBA. Excel nous a également permis de créer un tableau de bord dynamique, mis à jour automatiquement en fonction des modifications. 
+      Ce projet a représenté une réelle montée en compétences, tant sur le plan technique (VBA) que sur le plan méthodologique (conception de tableaux de bord interactifs).
+      Ce travail a été réalisé en binôme avec Antonin Vion, avec qui la collaboration a été enrichissante.`,
     file: "/fichiers/dossier zip/reporting.zip" 
   },
   {
     id: 6,
     title: "Enquête sur la pratique du sport des étudiants de l'IUT de Niort",
     image: "/fichiers/imagesProjets/sportEnq.png",
-    description: "Enquête sur la pratique du sport des étudiants de l'IUT de Niort",
+    description: "",
     file: "/fichiers/dossier zip/enquetesport.zip" 
   },
 
@@ -92,51 +106,70 @@ Ce travail a été mené en binôme, avec Noé TOQUOY, avec qui j’ai eu le pla
     id: 7,
     title: "Etude démographique des Hautes-Alpes",
     image: "/fichiers/imagesProjets/hautesAlpes.png",
-    description: "Etude démographique des Hautes-Alpes",
+    description: `L"objectif ce projet a été de créer un rapport  à des fins décisionnelles déstonées au NFP qui ont largement remporté lors des dernièes élections législatives dans cette partie du territoire français.
+    Pour réaliser le rapport nous avons premièrement du récupérer sur le site de l'INSEE des fichiers excel raltives à la démographie du département, du chomage et de l'emploi.
+    Une fois récuperer nous avons du exploiter chacun de ces fichiers à fin d'en tirer des conclusions pertinentes  à partir  des graphiques créés et d'indicateurs calculés.
+    Une fois indicateurs et graphiques formés. Nous avons du les interpreter dans le but premièrement de faire un bilan globale de ce département puis de proposer des solutions aux différents problèmes détectés`,
     file: "/fichiers/dossier zip/etudeHA.pdf"
   },
   {
     id: 8,
     title: "Enquête sur la santé des étudiants de l'IUT de Niort",
     image: "/fichiers/imagesProjets/sphinx.jpg",
-    description: "Enquête sur la santé des étudiants de l'IUT de Niort",
+    description: "",
     file: "/fichiers/telechargements/BD.zip" // Exemple de chemin de fichier
   },
   {
     id: 9,
-    title: "Projet 4",
-    image: "https://via.placeholder.com/800x500",
-    description: "Description courte du projet 4",
+    title: "DataViz",
+    image: "/fichiers/imagesProjets/dataviz.png",
+    description: `Le concours Dataviz est un événement organisé chaque année par l’Insee, réunissant tous les départements BUT Science des Données (SD) de France.
+Le thème de cette édition portait sur la scolarisation des jeunes âgés de 19 à 25 ans en France. À partir des données fournies, chaque groupe devait définir une problématique pertinente et réaliser une infographie pour y répondre.
+L’infographie réalisée par mon groupe a été jugée la plus pertinente et la mieux conçue. Nous avons ainsi été sélectionnés pour représenter le département BUT SD de Niort au niveau national.
+
+Résultats à venir…`,
     file: "/fichiers/telechargements/BD.zip" // Exemple de chemin de fichier
   },
 
   {
     id: 10,
-    title: "Projet 4",
-    image: "https://via.placeholder.com/800x500",
-    description: "Description courte du projet 4",
+    title: "Estimation par échantillonage",
+    image: "/fichiers/imagesProjets/statinf.png",
+    description: `L’objectif de ce projet était de tester différentes méthodes d’échantillonnage afin de comparer leurs résultats et de déterminer laquelle était la plus efficace.
+
+Nous disposions d’un fichier Excel contenant les données démographiques de toutes les régions de France. Pour cette étude, nous nous sommes concentrés uniquement sur la région Pays de la Loire. L’objectif était d’estimer sa population à partir d’un échantillon, puis de comparer cette estimation au chiffre réel.
+
+Pour cela, nous avons sélectionné un échantillon de 100 communes, selon deux méthodes distinctes. L’étude a été divisée en deux phases :
+
+1. Une première phase utilisant un sondage aléatoire simple à probabilité égale, où chaque commune avait la même chance d’être sélectionnée.
+2. Une seconde phase basée sur un sondage stratifié, consistant à diviser les communes en groupes homogènes avant de tirer l’échantillon.
+
+Enfin, nous avons comparé les résultats issus des deux méthodes pour évaluer laquelle fournissait l’estimation la plus précise de la population réelle.`,
+
     file: "/fichiers/telechargements/BD.zip" // Exemple de chemin de fichier
 
   },
   {
     id: 11,
-    title: "Projet 4",
-    image: "https://via.placeholder.com/800x500",
-    description: "Description courte du projet 4",
+    title: "Indicateurs de performance",
+    image: "/fichiers/imagesProjets/indicperf.png",
+    description: `L’objectif de ce projet était de réaliser un bilan financier du groupe Fleury-Michon, puis de se concentrer plus spécifiquement sur sa filiale Fleury-Michon LS. Nous avons calculé différents indicateurs financiers, établi un diagnostic et conçu un tableau de bord intégrant des chiffres clés et des graphiques.
+Pour ce faire, nous disposions de fichiers Excel à partir desquels nous avons effectué nos calculs et généré les visualisations.`,
+
     file: "/fichiers/telechargements/BD.zip" // Exemple de chemin de fichier
   },
   {
     id: 12,
-    title: "Projet 4",
-    image: "https://via.placeholder.com/800x500",
-    description: "Description courte du projet 4",
-    file: "/fichiers/telechargements/BD.zip" // Exemple de chemin de fichier
-  },
+    title: "Portfolio",
+    image: "/fichiers/imagesProjets/portfolio.png",
+    description: `Nous devions concevoir un portfolio présentant les projets réalisés, un bilan de notre première année, ainsi qu'une section dédiée à nos activités extra-scolaires.
+Ce portfolio pouvait être réalisé à l’aide d’outils de création de sites ou directement par le biais du code.
+J’ai choisi de le développer moi-même, ce qui m’a permis de renforcer mes compétences en HTML, CSS et JavaScript.`  },
 
   {
     id: 13,
-    title: "Portfolio",
-    image: "https://via.placeholder.com/800x500",
+    title: "Analyse de données, reporting et datavisualisation",
+    image: "",
     description: "Description courte du projet 4",
     file: "/fichiers/telechargements/BD.zip" // Exemple de chemin de fichier
   }
@@ -310,4 +343,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// commentaire
+// commentaireee
+

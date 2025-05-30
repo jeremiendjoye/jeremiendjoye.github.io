@@ -356,12 +356,13 @@ footer .download-cv {
   }
 
   .project-description {
-    color: #666;
+    color: black;
+    font-weight: bold;
   }
 
   .btn-more {
     align-self: flex-end;
-    background-color: #2563eb;
+    background-color: #ff6b6b;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -481,6 +482,7 @@ footer .download-cv {
   line-height: 1.6;
   margin-bottom: 25px;
   font-size: 16px;
+  text-align: justify;
 }
 
 #modal-download {
@@ -498,6 +500,58 @@ footer .download-cv {
 #modal-download:hover {
   background-color: #003d73; /* Effet hover */
 }
+
+
+.projet-footer{
+    margin-top: 45px;
+    margin-bottom: 71px;
+    background-color: #cacaca;
+    color: #0b162c;
+    padding: 80px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    line-height: 1.6;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.projet-footer h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.projet-footer{
+  line-height: 1.6;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.projet-bouton {
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* Style du bouton */
+.download-file {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #0b162c;
+    border-radius: 5px;
+    display: inline-block;
+}
+
 
 /* BILAN */
 
