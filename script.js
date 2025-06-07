@@ -42,15 +42,55 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const projects = [
+
   {
     id: 1,
-    title: "Conception et implémentation d'une base de données",
-    image: "/fichiers/imagesProjets/conceptionBD.png",
-    description: ``,
-    file: "fichiers/dossier zip/BD.zip" 
+    title: "Analyse de données, reporting et datavisualisation",
+    image: "/fichiers/imagesProjets/calyxis.png",
+    description: `Dans le cadre de cette SAÉ, nous avions pour objectif de concevoir un outil interactif et dynamique destiné à Calyxis, en exploitant les données issues de l’observatoire MAVIE. Cet outil visait à analyser l’ampleur des Accidents de la Vie Courante (AcVC) en France, à en identifier les principales caractéristiques ainsi que les facteurs influençant leur survenue et leur gravité. À partir de cette analyse, nous avons également proposé des mesures de prévention innovantes, adaptées aux profils des individus et à leur environnement.
+Pour mener à bien ce projet, nous avons travaillé à partir de plusieurs fichiers de données contenant : les informations personnelles des volontaires, les caractéristiques de leur logement, ainsi que le détail des accidents recensés. Ces fichiers étaient accompagnés de questionnaires explicatifs, qui nous ont permis de mieux comprendre le contexte et d’orienter efficacement la conceptualisation de notre outil.
+Dans un premier temps, mon groupe et moi avons procédé au nettoyage des données fournies à l’aide du langage Python, en mobilisant notamment la bibliothèque pandas. Une fois les données traitées et rendues exploitables, nous avons conçu une interface graphique à l’aide de la bibliothèque Streamlit.
+Depuis cette interface, l’utilisateur peut :
+-importer un fichier Excel contenant les données brutes ; celui-ci est automatiquement nettoyé, générant en sortie deux fichiers CSV : l’un relatif aux individus, l’autre aux accidents ;
+-visualiser le contenu des tables nettoyées ;
+-effectuer des tests statistiques, notamment le test du Khi², pour étudier les liens entre certaines variables ;
+-accéder à un onglet tutoriel présentant les différentes étapes de l’utilisation de l’outil et un guide explicatif ;
+-consulter un onglet "Solutions" apportant des réponses concrètes à la problématique initiale.
+En parallèle, j’ai développé un tableau de bord dynamique permettant de visualiser les tendances majeures des AcVC, à travers différents indicateurs.
+Ce projet m’a permis de renforcer mes compétences dans plusieurs domaines essentiels à la science des données : l’analyse et le nettoyage de données avec pandas, le développement d’une interface utilisateur avec Streamlit, la conception d’outils d’aide à la décision avec Power Bi, mais aussi la gestion de projet, notamment grâce à l’application de la méthodologie SCRUM, qui a rythmé notre organisation collective.`,
+    file: "/fichiers/telechargements/BD.zip" 
   },
   {
     id: 2,
+    title: "Conception et implémentation d'une base de données",
+    image: "/fichiers/imagesProjets/conceptionBD.png",
+    description: `L’objectif de ce projet était de concevoir un outil permettant la création et la gestion d’une base de données.
+Dans un premier temps, nous avons conçu le Modèle Conceptuel de Données (MCD) à l’aide de Looping MCD, puis nous avons créé la base de données en l’hébergeant sur phpMyAdmin.
+Une fois la base en place, nous avons développé une interface graphique avec Tkinter (Python). Cette interface permettait de :
+
+- se connecter à une base de données ou d’en créer une nouvelle ;
+- visualiser les tables existantes ;
+- effectuer des opérations telles que l’ajout, la suppression ou la modification d’enregistrements ;
+- importer des données depuis des fichiers CSV ou SQL ;
+- exécuter des requêtes SQL personnalisées ;
+- et bien d’autres fonctionnalités.
+
+Ce projet m’a permis de monter en compétences, notamment en SQL, en Python, ainsi que dans la conception et l'interfaçage de bases de données.`,
+    file: "fichiers/dossier zip/BD.zip" 
+  },
+  {
+    id: 3,
+    title: "DataViz",
+    image: "/fichiers/imagesProjets/dataviz.png",
+    description: `Le concours Dataviz est un événement organisé chaque année par l’Insee, réunissant tous les départements BUT Science des Données (SD) de France.
+Le thème de cette édition portait sur la scolarisation des jeunes âgés de 19 à 25 ans en France. À partir des données fournies, chaque groupe devait définir une problématique pertinente et réaliser une infographie pour y répondre.
+L’infographie réalisée par mon groupe a été jugée la plus pertinente et la mieux conçue. Nous avons ainsi été sélectionnés pour représenter le département BUT SD de Niort au niveau national.
+
+Résultats à venir le 12 juin 2025!`,
+    file: "/fichiers/telechargements/BD.zip" 
+  },
+  {
+    id: 4,
     title: "Gestion de fichiers",
     image: "/fichiers/imagesProjets/gestionFichiers.png",
     description: `À l'origine, nous disposions d'un fichier au format JSON regroupant l'ensemble des événements ayant eu lieu pendant les Jeux Olympiques de Paris 2024.
@@ -64,75 +104,18 @@ const projects = [
     file: "/fichiers/dossier zip/gestionfichier.zip" 
   },
   {
-    id: 3,
+    id: 5,
     title: "Régréssion linéaire sur des données réelles",
     image: "/fichiers/imagesProjets/regression.png",
-    description: `L'objectif de ce projet a été de prédire le prix des biens immobiliers dans le département des Deux-Sèvres en utilisant un modèle mathématique.
-                  Pour le réaliser nous disposions d'un fichier "train" regroupant plusieurs variable telles que le nombre de pièces, la surface du bien etc.
-                  A partir de ce fichier nous avons entrainé notre modèle en essayant d'établier une relation entre les différentes variables afin de prédire au mieux le prix des biens immobilers.
-                  Une fois que notre modèle a été défini nous sommes passés à la prédiction de ces biens sur le fichier "test" comportant les meme variables que "train" fichier à partir duquel notre modèle a été entrainé.
-                  Ce projet m'a permis de mettre en pratique les différentes notions vu en mathématiques à travers le choix du modèle etc et d'avoir..`,
+    description: `L’objectif de ce projet était de prédire le prix des biens immobiliers dans le département des Deux-Sèvres à l’aide d’un modèle mathématique.
+Pour cela, nous disposions d’un fichier d’entraînement (« train ») contenant plusieurs variables telles que le nombre de pièces, la surface du bien, etc.
+À partir de ces données et à l'aide de R, nous avons entraîné notre modèle en cherchant à établir des relations pertinentes entre les différentes variables et la valeur foncière afin d’estimer au mieux le prix des biens.
+Une fois le modèle construit, nous l’avons utilisé pour réaliser des prédictions sur un second fichier (« test »), structuré de la même manière que le fichier d’entraînement.
+Ce projet m’a permis de mettre en pratique les notions abordées en mathématiques, notamment dans le choix et la mise en œuvre du modèle, tout en développant mes compétences en analyse de données et en modélisation.`,
     file: "/fichiers/dossier zip/regression.zip"
   },
   {
-    id: 4,
-    title: "Présentation d'un territoire économique",
-    image: "/fichiers/imagesProjets/PresentationBeijing.png",
-    description: `Dans le cadre de ce projet, nous avons présenté les Jeux Olympiques de Pékin 2008, en mettant en lumière l’impact économique et symbolique qu’ils ont eu sur la Chine. Au-delà de l’aspect sportif, nous avons également abordé la richesse de l’histoire chinoise, son patrimoine architectural, ainsi que d’autres dimensions culturelles majeures.
-La présentation a été réalisée en français et en anglais, appuyée par un diaporama PowerPoint. Cette présentation m’a permis d’en apprendre davantage sur l’histoire de la Chine, tout en renforçant mes compétences en communication orale et en anglais.
-Ce travail a été mené en binôme, avec Noé TOQUOY, avec qui j’ai eu le plaisir de collaborer.`,
-    file: "/fichiers/dossier zip/Beijing2008.pptx" 
-  },
-  {
-    id: 5,
-    title: "Création d'un reporting",
-    image: "/fichiers/imagesProjets/reporting.png",
-    description: ` L’objectif de ce projet était de concevoir une application sous Excel à destination des étudiants de première année du BUT Science des Données. 
-      Cette application leur permet de suivre l’évolution de leurs notes, d’identifier les blocs validés, et de savoir s’ils remplissent les conditions pour passer en deuxième année.
-      Pour ce faire, nous avons utilisé Excel et le langage VBA. Nous avons notamment automatisé l’insertion et la suppression de notes ainsi que d’autres fonctionnalités à l’aide de UserForms que nous avons programmés en VBA. Excel nous a également permis de créer un tableau de bord dynamique, mis à jour automatiquement en fonction des modifications. 
-      Ce projet a représenté une réelle montée en compétences, tant sur le plan technique (VBA) que sur le plan méthodologique (conception de tableaux de bord interactifs).
-      Ce travail a été réalisé en binôme avec Antonin Vion, avec qui la collaboration a été enrichissante.`,
-    file: "/fichiers/dossier zip/reporting.zip" 
-  },
-  {
     id: 6,
-    title: "Enquête sur la pratique du sport des étudiants de l'IUT de Niort",
-    image: "/fichiers/imagesProjets/sportEnq.png",
-    description: "",
-    file: "/fichiers/dossier zip/enquetesport.zip" 
-  },
-
-  {
-    id: 7,
-    title: "Etude démographique des Hautes-Alpes",
-    image: "/fichiers/imagesProjets/hautesAlpes.png",
-    description: `L"objectif ce projet a été de créer un rapport  à des fins décisionnelles déstonées au NFP qui ont largement remporté lors des dernièes élections législatives dans cette partie du territoire français.
-    Pour réaliser le rapport nous avons premièrement du récupérer sur le site de l'INSEE des fichiers excel raltives à la démographie du département, du chomage et de l'emploi.
-    Une fois récuperer nous avons du exploiter chacun de ces fichiers à fin d'en tirer des conclusions pertinentes  à partir  des graphiques créés et d'indicateurs calculés.
-    Une fois indicateurs et graphiques formés. Nous avons du les interpreter dans le but premièrement de faire un bilan globale de ce département puis de proposer des solutions aux différents problèmes détectés`,
-    file: "/fichiers/dossier zip/etudeHA.pdf"
-  },
-  {
-    id: 8,
-    title: "Enquête sur la santé des étudiants de l'IUT de Niort",
-    image: "/fichiers/imagesProjets/sphinx.jpg",
-    description: "",
-    file: "/fichiers/telechargements/BD.zip" // Exemple de chemin de fichier
-  },
-  {
-    id: 9,
-    title: "DataViz",
-    image: "/fichiers/imagesProjets/dataviz.png",
-    description: `Le concours Dataviz est un événement organisé chaque année par l’Insee, réunissant tous les départements BUT Science des Données (SD) de France.
-Le thème de cette édition portait sur la scolarisation des jeunes âgés de 19 à 25 ans en France. À partir des données fournies, chaque groupe devait définir une problématique pertinente et réaliser une infographie pour y répondre.
-L’infographie réalisée par mon groupe a été jugée la plus pertinente et la mieux conçue. Nous avons ainsi été sélectionnés pour représenter le département BUT SD de Niort au niveau national.
-
-Résultats à venir…`,
-    file: "/fichiers/telechargements/BD.zip" // Exemple de chemin de fichier
-  },
-
-  {
-    id: 10,
     title: "Estimation par échantillonage",
     image: "/fichiers/imagesProjets/statinf.png",
     description: `L’objectif de ce projet était de tester différentes méthodes d’échantillonnage afin de comparer leurs résultats et de déterminer laquelle était la plus efficace.
@@ -146,8 +129,65 @@ Pour cela, nous avons sélectionné un échantillon de 100 communes, selon deux 
 
 Enfin, nous avons comparé les résultats issus des deux méthodes pour évaluer laquelle fournissait l’estimation la plus précise de la population réelle.`,
 
-    file: "/fichiers/telechargements/BD.zip" // Exemple de chemin de fichier
+    file: "/fichiers/telechargements/BD.zip"
 
+  },
+
+{
+    id: 7,
+    title: "Etude démographique des Hautes-Alpes",
+    image: "/fichiers/imagesProjets/hautesAlpes.png",
+    description: `L’objectif de ce projet était de rédiger un rapport à des fins d’aide à la décision, destiné au Nouveau Front Populaire (NFP), qui a largement remporté les dernières élections législatives dans cette partie du territoire français.
+Pour ce faire, nous avons commencé par collecter, sur le site de l’INSEE, plusieurs fichiers Excel relatifs à la démographie, au chômage et à l’emploi dans le département concerné.
+Une fois les données récupérées, nous les avons exploitées afin d’en tirer des conclusions pertinentes, en nous appuyant sur des graphiques produits et des indicateurs statistiques calculés.
+Les graphiques et indicateurs obtenus ont ensuite été interprétés dans le but, d’une part, d’établir un diagnostic global de la situation socio-économique du département, et d’autre part, de proposer des pistes de solutions face aux principaux problèmes identifiés.`,
+    file: "/fichiers/dossier zip/etudeHA.pdf"
+},
+  {
+    id: 8,
+    title: "Création d'un reporting",
+    image: "/fichiers/imagesProjets/reporting.png",
+    description: ` L’objectif de ce projet était de concevoir une application sous Excel à destination des étudiants de première année du BUT Science des Données. 
+      Cette application leur permet de suivre l’évolution de leurs notes, d’identifier les blocs validés, et de savoir s’ils remplissent les conditions pour passer en deuxième année.
+      Pour ce faire, nous avons utilisé Excel et le langage VBA. Nous avons notamment automatisé l’insertion et la suppression de notes ainsi que d’autres fonctionnalités à l’aide de UserForms que nous avons programmés en VBA. Excel nous a également permis de créer un tableau de bord dynamique, mis à jour automatiquement en fonction des modifications. 
+      Ce projet a représenté une réelle montée en compétences, tant sur le plan technique (VBA) que sur le plan méthodologique (conception de tableaux de bord interactifs).
+      Ce travail a été réalisé en binôme avec Antonin Vion, avec qui la collaboration a été enrichissante.`,
+    file: "/fichiers/dossier zip/reporting.zip" 
+  },
+  {
+    id: 9,
+    title: "Enquête sur la pratique du sport des étudiants de l'IUT de Niort",
+    image: "/fichiers/imagesProjets/sportEnq.png",
+    description: `L’objectif de ce projet était de mener une enquête sur la pratique sportive des étudiants du campus de Niort.
+Pour cela, un questionnaire a été administré en face à face auprès des étudiants des départements Gestion des Entreprises et des Administrations (GEA), Hygiène, Sécurité, Environnement (HSE) et Science des Données.
+Les réponses recueillies ont ensuite été saisies dans le logiciel Sphinx IQ3, ce qui nous a permis de passer à l’analyse des données, à la production de graphiques et au calcul d’indicateurs pertinents.
+Enfin, un rapport de restitution a été rédigé pour présenter les résultats de l’enquête de manière claire et structurée.
+
+Ce projet m’a permis de renforcer mes compétences en rédaction, en analyse de données, ainsi qu’en utilisation du logiciel Sphinx IQ3.`,
+    file: "/fichiers/dossier zip/enquetesport.zip" 
+  },
+
+  {
+    id: 10,
+    title: "Etude démographique des Hautes-Alpes",
+    image: "/fichiers/imagesProjets/hautesAlpes.png",
+    description: `L’objectif de ce projet était de rédiger un rapport à des fins d’aide à la décision, destiné au Nouveau Front Populaire (NFP), qui a largement remporté les dernières élections législatives dans cette partie du territoire français.
+Pour ce faire, nous avons commencé par collecter, sur le site de l’INSEE, plusieurs fichiers Excel relatifs à la démographie, au chômage et à l’emploi dans le département concerné.
+Une fois les données récupérées, nous les avons exploitées afin d’en tirer des conclusions pertinentes, en nous appuyant sur des graphiques produits et des indicateurs statistiques calculés.
+Les graphiques et indicateurs obtenus ont ensuite été interprétés dans le but, d’une part, d’établir un diagnostic global de la situation socio-économique du département, et d’autre part, de proposer des pistes de solutions face aux principaux problèmes identifiés.`,
+    file: "/fichiers/dossier zip/etudeHA.pdf"
+  },
+  {
+    id: 11,
+    title: "Enquête sur la santé des étudiants de l'IUT de Niort",
+    image: "/fichiers/imagesProjets/sphinx.png",
+    description:`L’objectif de ce projet était de concevoir un questionnaire sur la santé des étudiants du campus de Niort à l’aide du logiciel Sphinx iQ3.
+Dans un premier temps, nous avons segmenté le questionnaire en différentes thématiques, puis réfléchi au choix des questions les plus pertinentes à poser.
+À partir de ces questions, nous avons construit un organigramme afin de structurer le questionnaire, avant de le finaliser dans Sphinx iQ3.
+
+La principale difficulté de ce projet a été le temps limité, puisque nous ne disposions que d’une matinée pour tout réaliser.
+Ce travail m’a permis de développer mes compétences en travail d’équipe, en répartition des tâches, ainsi qu’en prise en main rapide d’un outil professionnel.`,
+    file: "/fichiers/telechargements/BD.zip" 
   },
   {
     id: 11,
@@ -168,11 +208,12 @@ J’ai choisi de le développer moi-même, ce qui m’a permis de renforcer mes 
 
   {
     id: 13,
-    title: "Analyse de données, reporting et datavisualisation",
-    image: "",
-    description: "Description courte du projet 4",
-    file: "/fichiers/telechargements/BD.zip" // Exemple de chemin de fichier
-  }
+    title: "Présentation d'un territoire économique",
+    image: "/fichiers/imagesProjets/PresentationBeijing.png",
+    description: `Dans le cadre de ce projet, nous avons présenté les Jeux Olympiques de Pékin 2008, en mettant en lumière l’impact économique et symbolique qu’ils ont eu sur la Chine. Au-delà de l’aspect sportif, nous avons également abordé la richesse de l’histoire chinoise, son patrimoine architectural, ainsi que d’autres dimensions culturelles majeures.
+La présentation a été réalisée en français et en anglais, appuyée par un diaporama PowerPoint. Cette présentation m’a permis d’en apprendre davantage sur l’histoire de la Chine, tout en renforçant mes compétences en communication orale et en anglais.`,
+    file: "/fichiers/dossier zip/Beijing2008.pptx" 
+  },
 
 ];
 
@@ -298,6 +339,7 @@ function openModal(project) {
     modalContent.style.opacity = "1";
     modalContent.style.transform = "scale(1)";
   }, 10);
+  document.body.classList.add('modal-open')
 }
 
 // Fonction pour fermer la modale
@@ -312,6 +354,11 @@ function closeModal() {
     
     // Réactiver le scroll de la page principale
     document.body.style.overflow = "";
+  }, 300);
+  setTimeout(() => {
+    projectModal.classList.add("hidden");
+    modalContent.style.transition = "";
+    document.body.classList.remove('modal-open'); // Supprime la classe
   }, 300);
 }
 
@@ -343,5 +390,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// commentaireee
-
+ // Fonction pour toggle le menu burger
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('show');
+        }
+        
+        // Fermer le menu quand on clique sur un lien (mobile)
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.getElementById('navMenu');
+                menu.classList.remove('show');
+            });
+        });
+        
+        // Fermer le menu quand on clique ailleurs
+        document.addEventListener('click', (e) => {
+            const nav = document.querySelector('nav');
+            const menu = document.getElementById('navMenu');
+            if (!nav.contains(e.target)) {
+                menu.classList.remove('show');
+            }
+        });
