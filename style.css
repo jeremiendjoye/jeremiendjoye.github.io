@@ -806,6 +806,96 @@ footer .download-cv {
     display: inline-block;
 }
 
+/* --- MEDIA QUERIES POUR RESPONSIVE DESIGN --- */
+
+/* Petits écrans (smartphones) */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .close-button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  #modal-title {
+    font-size: 20px;
+  }
+
+  #modal-description {
+    font-size: 14px;
+  }
+
+  #modal-download {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .projet-footer {
+    padding: 40px 20px;
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .projet-footer h2 {
+    font-size: 1.75rem;
+  }
+
+  .projet-bouton {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .download-file {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+
+/* Écrans moyens (tablettes) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .modal-content {
+    width: 85%;
+    padding: 30px;
+  }
+
+  .close-button {
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+  }
+
+  #modal-title {
+    font-size: 22px;
+  }
+
+  #modal-description {
+    font-size: 15px;
+  }
+
+  #modal-download {
+    font-size: 15px;
+  }
+
+  .projet-footer {
+    padding: 60px;
+    font-size: 1.1rem;
+  }
+
+  .projet-footer h2 {
+    font-size: 2.2rem;
+  }
+
+  .download-file {
+    font-size: 17px;
+  }
+}
+
 /* BILAN */
 
 .bilan-content {

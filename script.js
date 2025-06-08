@@ -58,7 +58,7 @@ Depuis cette interface, l’utilisateur peut :
 -consulter un onglet "Solutions" apportant des réponses concrètes à la problématique initiale.
 En parallèle, j’ai développé un tableau de bord dynamique permettant de visualiser les tendances majeures des AcVC, à travers différents indicateurs.
 Ce projet m’a permis de renforcer mes compétences dans plusieurs domaines essentiels à la science des données : l’analyse et le nettoyage de données avec pandas, le développement d’une interface utilisateur avec Streamlit, la conception d’outils d’aide à la décision avec Power Bi, mais aussi la gestion de projet, notamment grâce à l’application de la méthodologie SCRUM, qui a rythmé notre organisation collective.`,
-    file: "/fichiers/telechargements/BD.zip" 
+    file: "/fichiers/dossier zip/mavie_dashboard.zip" 
   },
   {
     id: 2,
