@@ -87,7 +87,7 @@ Le thème de cette édition portait sur la scolarisation des jeunes âgés de 19
 L’infographie réalisée par mon groupe a été jugée la plus pertinente et la mieux conçue. Nous avons ainsi été sélectionnés pour représenter le département BUT SD de Niort au niveau national.
 
 Résultats à venir le 12 juin 2025!`,
-    file: "/fichiers/telechargements/BD.zip" 
+    file: "/fichiers/dossier zip/dataviz.zip" 
   },
   {
     id: 4,
@@ -116,12 +116,11 @@ Ce projet m’a permis de mettre en pratique les notions abordées en mathémati
   },
   {
     id: 6,
-    title: "Estimation par échantillonage",
+    title: "Estimation par échantillonnage",
     image: "/fichiers/imagesProjets/statinf.png",
     description: `L’objectif de ce projet était de tester différentes méthodes d’échantillonnage afin de comparer leurs résultats et de déterminer laquelle était la plus efficace.
 
 Nous disposions d’un fichier Excel contenant les données démographiques de toutes les régions de France. Pour cette étude, nous nous sommes concentrés uniquement sur la région Pays de la Loire. L’objectif était d’estimer sa population à partir d’un échantillon, puis de comparer cette estimation au chiffre réel.
-
 Pour cela, nous avons sélectionné un échantillon de 100 communes, selon deux méthodes distinctes. L’étude a été divisée en deux phases :
 
 1. Une première phase utilisant un sondage aléatoire simple à probabilité égale, où chaque commune avait la même chance d’être sélectionnée.
@@ -129,7 +128,7 @@ Pour cela, nous avons sélectionné un échantillon de 100 communes, selon deux 
 
 Enfin, nous avons comparé les résultats issus des deux méthodes pour évaluer laquelle fournissait l’estimation la plus précise de la population réelle.`,
 
-    file: "/fichiers/telechargements/BD.zip"
+    file: "/fichiers/dossier zip/echantillonnage_par_echantillonnage.zip"
 
   },
 
@@ -154,8 +153,17 @@ Les graphiques et indicateurs obtenus ont ensuite été interprétés dans le bu
       Ce travail a été réalisé en binôme avec Antonin Vion, avec qui la collaboration a été enrichissante.`,
     file: "/fichiers/dossier zip/reporting.zip" 
   },
-  {
+    {
     id: 9,
+    title: "Indicateurs de performance",
+    image: "/fichiers/imagesProjets/indicperf.png",
+    description: `L’objectif de ce projet était de réaliser un bilan financier du groupe Fleury-Michon, puis de se concentrer plus spécifiquement sur sa filiale Fleury-Michon LS. Nous avons calculé différents indicateurs financiers, établi un diagnostic et conçu un tableau de bord intégrant des chiffres clés et des graphiques.
+Pour ce faire, nous disposions de fichiers Excel à partir desquels nous avons effectué nos calculs et généré les visualisations.`,
+
+    file: "/fichiers/dossier zip/rapport_final.pdf" // Exemple de chemin de fichier
+  },
+  {
+    id: 10,
     title: "Enquête sur la pratique du sport des étudiants de l'IUT de Niort",
     image: "/fichiers/imagesProjets/sportEnq.png",
     description: `L’objectif de ce projet était de mener une enquête sur la pratique sportive des étudiants du campus de Niort.
@@ -168,16 +176,6 @@ Ce projet m’a permis de renforcer mes compétences en rédaction, en analyse d
   },
 
   {
-    id: 10,
-    title: "Etude démographique des Hautes-Alpes",
-    image: "/fichiers/imagesProjets/hautesAlpes.png",
-    description: `L’objectif de ce projet était de rédiger un rapport à des fins d’aide à la décision, destiné au Nouveau Front Populaire (NFP), qui a largement remporté les dernières élections législatives dans cette partie du territoire français.
-Pour ce faire, nous avons commencé par collecter, sur le site de l’INSEE, plusieurs fichiers Excel relatifs à la démographie, au chômage et à l’emploi dans le département concerné.
-Une fois les données récupérées, nous les avons exploitées afin d’en tirer des conclusions pertinentes, en nous appuyant sur des graphiques produits et des indicateurs statistiques calculés.
-Les graphiques et indicateurs obtenus ont ensuite été interprétés dans le but, d’une part, d’établir un diagnostic global de la situation socio-économique du département, et d’autre part, de proposer des pistes de solutions face aux principaux problèmes identifiés.`,
-    file: "/fichiers/dossier zip/etudeHA.pdf"
-  },
-  {
     id: 11,
     title: "Enquête sur la santé des étudiants de l'IUT de Niort",
     image: "/fichiers/imagesProjets/sphinx.png",
@@ -187,33 +185,28 @@ Dans un premier temps, nous avons segmenté le questionnaire en différentes th�
 
 La principale difficulté de ce projet a été le temps limité, puisque nous ne disposions que d’une matinée pour tout réaliser.
 Ce travail m’a permis de développer mes compétences en travail d’équipe, en répartition des tâches, ainsi qu’en prise en main rapide d’un outil professionnel.`,
-    file: "/fichiers/telechargements/BD.zip" 
+    file: "/fichiers/dossier zip/questionnaire_sante.zip" 
   },
-  {
-    id: 11,
-    title: "Indicateurs de performance",
-    image: "/fichiers/imagesProjets/indicperf.png",
-    description: `L’objectif de ce projet était de réaliser un bilan financier du groupe Fleury-Michon, puis de se concentrer plus spécifiquement sur sa filiale Fleury-Michon LS. Nous avons calculé différents indicateurs financiers, établi un diagnostic et conçu un tableau de bord intégrant des chiffres clés et des graphiques.
-Pour ce faire, nous disposions de fichiers Excel à partir desquels nous avons effectué nos calculs et généré les visualisations.`,
-
-    file: "/fichiers/telechargements/BD.zip" // Exemple de chemin de fichier
-  },
+  
   {
     id: 12,
-    title: "Portfolio",
-    image: "/fichiers/imagesProjets/portfolio.png",
-    description: `Nous devions concevoir un portfolio présentant les projets réalisés, un bilan de notre première année, ainsi qu'une section dédiée à nos activités extra-scolaires.
-Ce portfolio pouvait être réalisé à l’aide d’outils de création de sites ou directement par le biais du code.
-J’ai choisi de le développer moi-même, ce qui m’a permis de renforcer mes compétences en HTML, CSS et JavaScript.`  },
-
-  {
-    id: 13,
     title: "Présentation d'un territoire économique",
     image: "/fichiers/imagesProjets/PresentationBeijing.png",
     description: `Dans le cadre de ce projet, nous avons présenté les Jeux Olympiques de Pékin 2008, en mettant en lumière l’impact économique et symbolique qu’ils ont eu sur la Chine. Au-delà de l’aspect sportif, nous avons également abordé la richesse de l’histoire chinoise, son patrimoine architectural, ainsi que d’autres dimensions culturelles majeures.
 La présentation a été réalisée en français et en anglais, appuyée par un diaporama PowerPoint. Cette présentation m’a permis d’en apprendre davantage sur l’histoire de la Chine, tout en renforçant mes compétences en communication orale et en anglais.`,
     file: "/fichiers/dossier zip/Beijing2008.pptx" 
   },
+
+  {
+    id: 13,
+    title: "Portfolio",
+    image: "/fichiers/imagesProjets/portfolio.png",
+    description: `Nous devions concevoir un portfolio présentant les projets réalisés, un bilan de notre première année, ainsi qu'une section dédiée à nos activités extra-scolaires.
+Ce portfolio pouvait être réalisé à l’aide d’outils de création de sites ou directement par le biais du code.
+J’ai choisi de le développer moi-même, ce qui m’a permis de renforcer mes compétences en HTML, CSS et JavaScript.`  ,
+    file: "/fichiers/dossier zip/Beijing2008.pptx"},
+
+
 
 ];
 
