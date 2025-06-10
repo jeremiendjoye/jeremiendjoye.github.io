@@ -204,7 +204,7 @@ La présentation a été réalisée en français et en anglais, appuyée par un 
     description: `Nous devions concevoir un portfolio présentant les projets réalisés, un bilan de notre première année, ainsi qu'une section dédiée à nos activités extra-scolaires.
 Ce portfolio pouvait être réalisé à l’aide d’outils de création de sites ou directement par le biais du code.
 J’ai choisi de le développer moi-même, ce qui m’a permis de renforcer mes compétences en HTML, CSS et JavaScript.`  ,
-    file: "/fichiers/dossier zip/Beijing2008.pptx"},
+    file: "/fichiers/dossier zip/site.docx"},
 
 
 
