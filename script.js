@@ -85,8 +85,7 @@ Ce projet m’a permis de monter en compétences, notamment en SQL, en Python, a
     description: `Le concours Dataviz est un événement organisé chaque année par l’Insee, réunissant tous les départements BUT Science des Données (SD) de France.
 Le thème de cette édition portait sur la scolarisation des jeunes âgés de 19 à 25 ans en France. À partir des données fournies, chaque groupe devait définir une problématique pertinente et réaliser une infographie pour y répondre.
 L’infographie réalisée par mon groupe a été jugée la plus pertinente et la mieux conçue. Nous avons ainsi été sélectionnés pour représenter le département BUT SD de Niort au niveau national.
-
-Résultats à venir le 12 juin 2025!`,
+Le 12 juin 2025, l’Insee a donné les résultats, nous avons eu l’honneur de recevoir le prix du jury pour la meilleure infographie devant Grenoble et Dole.`,
     file: "/fichiers/dossier zip/dataviz.zip" 
   },
   {
