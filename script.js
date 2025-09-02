@@ -66,13 +66,15 @@ Ce projet m’a permis de renforcer mes compétences dans plusieurs domaines ess
     image: "/fichiers/imagesProjets/conceptionBD.png",
     description: `L’objectif de ce projet était de concevoir un outil permettant la création et la gestion d’une base de données.
 Dans un premier temps, nous avons conçu le Modèle Conceptuel de Données (MCD) à l’aide de Looping MCD, puis nous avons créé la base de données en l’hébergeant sur phpMyAdmin.
-Une fois la base en place, nous avons développé une interface graphique avec Tkinter (Python). Cette interface permettait de :
+Une fois la base en place, nous avons développé une interface graphique avec Tkinter (Python). 
+
+Cette interface permettait à l'utilisateur de :
 
 - se connecter à une base de données ou d’en créer une nouvelle ;
-- visualiser les tables existantes ;
+- visualiser le contenu des tables existantes (clients, commandes, produits, etc.) ;
 - effectuer des opérations telles que l’ajout, la suppression ou la modification d’enregistrements ;
 - importer des données depuis des fichiers CSV ou SQL ;
-- exécuter des requêtes SQL personnalisées ;
+- exécuter des requêtes SQL personnalisées dans le but de réaliser des analyses spécifiques ;
 - et bien d’autres fonctionnalités.
 
 Ce projet m’a permis de monter en compétences, notamment en SQL, en Python, ainsi que dans la conception et l'interfaçage de bases de données.`,
